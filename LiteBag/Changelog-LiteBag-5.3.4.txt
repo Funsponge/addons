@@ -1,0 +1,25 @@
+------------------------------------------------------------------------
+r85 | xodiv | 2013-07-23 08:23:40 +0000 (Tue, 23 Jul 2013) | 3 lines
+Changed paths:
+   A /tags/5.3.4 (from /trunk:84)
+
+Tagging as 5.3.4
+
+Fix a bug with buying new bank slots, where the new slot would not appear until you had closed the bank and then opened it again.
+------------------------------------------------------------------------
+r84 | xodiv | 2013-07-23 08:12:53 +0000 (Tue, 23 Jul 2013) | 3 lines
+Changed paths:
+   M /trunk/LiteBagBagButtonTemplate.lua
+   M /trunk/LiteBagFrameTemplate.lua
+
+Update the bank bag buttons properly when we buy a bank slot without
+having to close and re-open the frame.
+
+------------------------------------------------------------------------
+r83 | xodiv | 2013-06-21 05:56:10 +0000 (Fri, 21 Jun 2013) | 2 lines
+Changed paths:
+   M /trunk/DEVELOPER_NOTES.txt
+
+Update TODO list.
+
+------------------------------------------------------------------------

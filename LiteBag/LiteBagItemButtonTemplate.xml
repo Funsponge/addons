@@ -1,0 +1,46 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+
+<!-- Copyright 2013 Mike Battersby -->
+
+<Script file="LiteBagItemButtonTemplate.lua"/>
+
+<Button name="LiteBagItemButtonTemplate" inherits="ContainerFrameItemButtonTemplate" hidden="true" virtual="true">
+
+    <Size x="37" y="37" />
+
+    <Layers>
+        <Layer level="BACKGROUND">
+            <Texture file="Interface\Buttons\UI-Slot-Background" parentKey="bg">
+                <Size x="38.5" y="38.5" />
+                <Anchors>
+                    <Anchor point="TOPLEFT" x="-1" y="-1" />
+                </Anchors>
+                <TexCoords left="0" right="0.640625" top="0" bottom="0.640625" />
+                <Color r="0.5" b="0.5" g="0.5" a="0.8" />
+            </Texture>
+        </Layer>
+        <Layer level="ARTWORK" textureSubLevel="1">
+            <Texture name="$parentQualityTexture" parentKey="qualityTexture" file="Interface\Buttons\UI-ActionButton-Border" alphaMode="ADD" hidden="true">
+                <Size x="37" y="37" />
+                <Anchors>
+                    <Anchor point="CENTER" />
+                </Anchors>
+                <TexCoords left="0.22" right="0.78" top="0.22" bottom="0.78" />
+                <Color r="1" g="1" b="1" a="0.5" />
+            </Texture>
+        </Layer>
+    </Layers>
+
+    <Scripts>
+        <!-- No OnClick, we have to inherit it because it's secure. -->
+        <OnLoad function="LiteBagItemButton_OnLoad" />
+        <OnEnter function="LiteBagItemButton_OnEnter" />
+        <OnLeave function="LiteBagItemButton_OnLeave" />
+        <OnHide function="LiteBagItemButton_OnHide" />
+        <OnDragStart function="LiteBagItemButton_OnDrag" />
+        <OnReceiveDrag function="LiteBagItemButton_OnDrag" />
+    </Scripts>
+
+</Button>
+
+</Ui>

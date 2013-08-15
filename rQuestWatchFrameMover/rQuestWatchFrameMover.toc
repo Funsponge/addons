@@ -1,0 +1,6 @@
+## Interface: 50300
+## Author: zork
+## Title: rQuestWatchFrameMover
+## Notes: Makes the QuestWatchFrame movable.
+
+core.lua

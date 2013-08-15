@@ -1,0 +1,16 @@
+## Interface: 50300
+## Title: LiteBag
+## Version: 5.3.4
+## Author: Xodiv of Proudmoore
+## Email: mib@post.com
+## Dependencies: Blizzard_TokenUI
+## X-Curse-Packaged-Version: 5.3.4
+## X-Curse-Project-Name: LiteBag
+## X-Curse-Project-ID: litebag
+## X-Curse-Repository-ID: wow/litebag/mainline
+
+LiteBagItemButtonTemplate.xml
+LiteBagBagButtonTemplate.xml
+LiteBagFrameTemplate.xml
+LiteBag.xml
+ReplaceBlizzard.lua
