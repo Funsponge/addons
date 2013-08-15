@@ -20,16 +20,16 @@
 
   cfg.highlightPlayerSpells = true  --player spells will have a blue border
   cfg.updatetime            = 0.3   --how fast should the timer update itself
-  cfg.timeFontSize          = 15
+  cfg.timeFontSize          = 16
   cfg.countFontSize         = 18
 
-  --warrior defaults
-  if player_class == "WARRIOR" then
-    --default warrior buffs
+  --paladin defaults
+  if player_class == "PALADIN" then
+    --default paladin buffs
     cfg.rf3_BuffList = {}
-    --default warrior debuffs
+    --default paladin debuffs
     cfg.rf3_DebuffList = {}
-    --default warrior cooldowns
+    --default paladin cooldowns
     cfg.rf3_CooldownList = {}
   end
 
