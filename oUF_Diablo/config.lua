@@ -121,11 +121,11 @@
         show = true,
         scale = 0.40,
         color = {r = 200/255, g = 135/255, b = 190/255, },
-        pos = { a1 = "BOTTOM", a2 = "BOTTOM", af = "UIParent", x = 0, y = 650 },
+        pos = { a1 = "BOTTOM", a2 = "BOTTOM", af = "UIParent", x = 0, y = 685 },
         combat          = { --fade the bar in/out in combat/out of combat
-          enable          = false,
+          enable          = true,
           fadeIn          = {time = 0.4, alpha = 1},
-          fadeOut         = {time = 0.3, alpha = 0.2},
+          fadeOut         = {time = 20, alpha = 0},
         },
       },
       shadoworbs = { --class bar SHADOW PRIEST

@@ -192,7 +192,7 @@
     },
     --STANCE- + POSSESSBAR
     stancebar = {
-      enable          = true, --enable module
+      enable          = false, --enable module
       show            = true, --true/false
       scale           = 0.82,
       padding         = 2, --frame padding
@@ -237,7 +237,7 @@
     --VEHICLE EXIT (no vehicleui)
     leave_vehicle = {
       enable          = true, --enable module
-      scale           = 0.82,
+      scale           = 0.9,
       padding         = 10, --frame padding
       buttons         = {
         size            = 26,
