@@ -45,7 +45,7 @@
     player = {
       show = true,
       size = 150,
-      scale = 0.82,
+      scale = 0.9,
       pos = { a1 = "BOTTOM", a2 = "BOTTOM", af = "UIParent", x = -260, y = -9 },
       health = {
         frequentUpdates = false,

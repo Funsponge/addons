@@ -22,7 +22,7 @@
     bar1 = {
       enable          = true, --enable module
       uselayout2x6    = false,
-      scale           = 0.82,
+      scale           = 0.9,
       padding         = 2, --frame padding
       buttons         = {
         size            = 26,
@@ -46,7 +46,7 @@
     --OVERRIDE BAR (vehicle ui)
     overridebar = { --the new vehicle and override bar
       enable          = true, --enable module
-      scale           = 0.82,
+      scale           = 0.9,
       padding         = 2, --frame padding
       buttons         = {
         size            = 26,
@@ -71,7 +71,7 @@
     bar2 = {
       enable          = true, --enable module
       uselayout2x6    = false,
-      scale           = 0.82,
+      scale           = 0.9,
       padding         = 2, --frame padding
       buttons         = {
         size            = 26,
@@ -95,7 +95,7 @@
     --BAR 3
     bar3 = {
       enable          = true, --enable module
-      scale           = 0.82,
+      scale           = 0.9,
       padding         = 2, --frame padding
       buttons         = {
         size            = 26,
@@ -120,7 +120,7 @@
     bar4 = {
       enable          = true, --enable module
       combineBar4AndBar5  = true, --by choosing true both bar 4 and 5 will react to the same hover effect, thus true/false at the same time, settings for bar5 will be ignored
-      scale           = 0.82,
+      scale           = 0.9,
       padding         = 10, --frame padding
       buttons         = {
         size            = 26,
@@ -144,7 +144,7 @@
     --BAR 5
     bar5 = {
       enable          = true, --enable module
-      scale           = 0.82,
+      scale           = 0.9,
       padding         = 10, --frame padding
       buttons         = {
         size            = 26,
@@ -169,7 +169,7 @@
     petbar = {
       enable          = true, --enable module
       show            = true, --true/false
-      scale           = 0.82,
+      scale           = 0.9,
       padding         = 2, --frame padding
       buttons         = {
         size            = 26,
@@ -194,7 +194,7 @@
     stancebar = {
       enable          = false, --enable module
       show            = true, --true/false
-      scale           = 0.82,
+      scale           = 0.9,
       padding         = 2, --frame padding
       buttons         = {
         size            = 26,
@@ -218,7 +218,7 @@
     --EXTRABAR
     extrabar = {
       enable          = true, --enable module
-      scale           = 0.82,
+      scale           = 0.9,
       padding         = 10, --frame padding
       buttons         = {
         size            = 36,

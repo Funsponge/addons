@@ -18,7 +18,7 @@
   cfg.mapcluster = {
     pos             = { a1 = "TOPRIGHT", af = UIParent, a2 = "TOPRIGHT", x = 0, y = 0 },
     userplaced      = true, --want to place the bar somewhere else?
-    scale           = 0.82,
+    scale           = 0.9,
   }
 
   cfg.map = {
