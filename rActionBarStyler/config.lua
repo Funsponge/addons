@@ -272,7 +272,7 @@
     --BAGS
     bags = {
       enable          = true, --enable module
-      show            = true, --true/false
+      show            = false, --true/false
       scale           = 0.82,
       padding         = 15, --frame padding
       pos             = { a1 = "BOTTOMRIGHT", a2 = "BOTTOMRIGHT", af = "UIParent", x = -0, y = 0 },

@@ -109,9 +109,9 @@ function Timer.OnSizeChanged(self, width, height)
 	if fontScale < MIN_SCALE then
 		self:Hide()
 	else
-		self.text:SetFont(FONT_FACE, fontScale * FONT_SIZE, 'OUTLINE')
-		self.text:SetShadowColor(0, 0, 0, 0.8)
-		self.text:SetShadowOffset(1, -1)
+		self.text:SetFont(FONT_FACE, fontScale * FONT_SIZE, 'THINOUTLINE')
+		--self.text:SetShadowColor(0, 0, 0, 0.8)
+		--self.text:SetShadowOffset(1, -1)
 		if self.enabled then
 			Timer.ForceUpdate(self)
 		end
@@ -127,16 +127,21 @@ function Timer.Create(cd)
 
 	local timer = CreateFrame('Frame', nil, scaler); timer:Hide()
 	timer:SetAllPoints(scaler)
-	
+
 	local updater = timer:CreateAnimationGroup()
 	updater:SetLooping('NONE')
 	updater:SetScript('OnFinished', function(self) Timer.UpdateText(timer) end)
-	
+
 	local a = updater:CreateAnimation('Animation'); a:SetOrder(1)
-	timer.updater = updater	
+	timer.updater = updater
 
 	local text = timer:CreateFontString(nil, 'OVERLAY')
-	text:SetPoint('CENTER', 0, 0)
+	--text:SetPoint('CENTER', 0, 0)
+	if cd:GetParent().action then
+		text:SetPoint('CENTER', 0, 0)
+	else
+		text:SetPoint('BOTTOM', 1, -2)
+	end
 	text:SetFont(FONT_FACE, FONT_SIZE, 'OUTLINE')
 	timer.text = text
 
@@ -149,7 +154,7 @@ end
 
 function Timer.Start(cd, start, duration, charges, maxCharges)
 	local remainingCharges = charges or 0
-	
+
 	--start timer
 	if start > 0 and duration > MIN_DURATION and remainingCharges == 0 and (not cd.noCooldownCount) then
 		local timer = cd.timer or Timer.Create(cd)
